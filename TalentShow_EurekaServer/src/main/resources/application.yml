@@ -1,0 +1,10 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false  #当前项目不注册服务
+    fetchRegistry: false  #当前项目不需要发现服务
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/talentshow/

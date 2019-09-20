@@ -1,0 +1,7 @@
+server:
+  port: 9902
+spring:
+  application:
+    name: ApplicantApi
+  profiles:
+    active: dev
